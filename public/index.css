@@ -1,0 +1,116 @@
+body{
+    font-family: 'raleway';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container{
+    margin: 0 15%;
+}
+
+.info-cards-div{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.info-cards-div_content p{
+    font-size: 14px;
+    font-weight: 300px;
+}
+
+.info2-cards-div{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.info2-cards-div-content p{
+    font-size: 13px;
+    font-weight: normal;
+    color: #252c36;
+}
+.text-info2{
+    font-weight: 300;
+    color: #252c36;
+}
+
+.apps-show-div{
+    display: flex;
+    flex-flow: wrap;
+    color: #252c36;
+}
+
+.header-apps-show-div{
+    font-size: 11px;
+    letter-spacing: 1px;
+
+}
+.name-apps-show-div{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.45;
+    letter-spacing: 0.9px;
+    margin-bottom: 11px;
+}
+
+.text-apps-show-div{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.coment-apps-show-div{
+    font-size: 11px;
+    color: #4EBC42;
+}
+
+@media screen and (min-width: 320px){
+    .info-cards-div_content{
+        width: 50%;
+    }
+    .text-succes{
+        color: #4ebc42;
+        font-size: 21px;
+    }
+    .heady_3 h3{
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: .2px;
+        margin-bottom: 80px;
+        line-height: 1.55;
+    }
+    .info2-cards-content{
+        width: 100%;
+    }
+    .text-info2{
+        font-size: 18px;
+        margin-bottom: 21px;
+    }
+    .apps-show-div-content{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .info-cards-div_content{
+        width: 25%;
+    }
+    .text-succes{
+        font-size: 32px;
+    }
+    .heady_3 h3{
+        font-size: 36px;
+    }
+    .info2-cards-div-content{
+        width: 33%;
+    }
+    .text-info2{
+        font-size: 20px;
+    }
+    .apps-show-div-content{
+        width: 50%;
+    }
+}
+
+
