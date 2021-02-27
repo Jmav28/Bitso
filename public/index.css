@@ -38,7 +38,6 @@ body{
 
 .text-info2 {
     font-size: 18px;
-    margin-bottom: 40px;
 }
 .apps-show-div {
     display: flex;
@@ -88,7 +87,7 @@ body{
         font-size: 13px;
         line-height: 1.4;
         letter-spacing: 0.5px; 
-        padding: 0 5px 0 5px;      
+        padding: 0 16px;      
     }
     .apps-show-div-content1, .apps-show-div-content2{
         width: 100%;
