@@ -12,9 +12,6 @@ body{
 .container {
     padding: 0 64px;
 }
-.container2 {
-    padding: 0 10px;
-}
 
 .info-cards-div-wrapper {
     display: flex;
@@ -43,7 +40,6 @@ body{
 }
 
 .icon-wrap1 {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
     background-color: #4d77ef;
@@ -52,7 +48,6 @@ body{
 }
 
 .icon-wrap2 {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
     background-color: #ffd340;
@@ -61,7 +56,6 @@ body{
 }
 
 .icon-wrap3 {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
     background-color: #ff7171;
@@ -142,14 +136,22 @@ body{
 .apps-show-phone {
     background: url(https://assets.bitso.com/static/media/app.a16b8f00.png) center center / contain no-repeat;
     height: 201px;
-    width: 258px;
+    width: auto;
     text-align: center;
+    position: relative;
 }
 
 .apps-show-grafica {
     background: url(https://assets.bitso.com/static/media/alpha.85594308.png) center center / contain no-repeat;
     height: 201px;
-    width: 500px;
+    width: auto;
+}
+
+.apps-show-phone-text {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 85%;
+    left: 50%;
 }
 
 @media screen and (min-width: 320px){
