@@ -12,9 +12,6 @@ body{
 .container {
     padding: 0 64px;
 }
-.container2 {
-    padding: 0 10px;
-}
 
 .info-cards-div-wrapper {
     display: flex;
@@ -43,7 +40,6 @@ body{
 }
 
 .icon-wrap1 {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
     background-color: #4d77ef;
@@ -52,7 +48,6 @@ body{
 }
 
 .icon-wrap2 {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
     background-color: #ffd340;
@@ -61,7 +56,6 @@ body{
 }
 
 .icon-wrap3 {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
     background-color: #ff7171;
@@ -142,14 +136,88 @@ body{
 .apps-show-phone {
     background: url(https://assets.bitso.com/static/media/app.a16b8f00.png) center center / contain no-repeat;
     height: 201px;
-    width: 258px;
+    width: auto;
     text-align: center;
+    position: relative;
 }
 
 .apps-show-grafica {
     background: url(https://assets.bitso.com/static/media/alpha.85594308.png) center center / contain no-repeat;
     height: 201px;
-    width: 500px;
+    width: auto;
+}
+
+.apps-show-phone-text {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 85%;
+    left: 50%;
+}
+
+.apps2-show {
+    display: flex;
+    border-radius: 10px 10px;
+    margin: 0 64px 80px 64px;
+    background: #4ebc42;
+}
+
+.apps2-show-wrapper1 {
+    width: 40%;
+    height: 151px;
+    padding: 69px 5%;    
+}
+
+.apps2-show-wrapper2 {
+    width: 50%; 
+    background: url(https://assets.bitso.com/static/media/emoji1.d3cc48f3.png) center center / contain no-repeat;
+}
+
+.apps2-show-msj1 {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;
+    width: 272px;
+    height: 92px;
+    padding: 20px 28px;
+    transform: translateX(130px) translateY(25px);
+}
+
+.apps2-heady-container {
+    display: flex;
+}
+
+.apps2-heady-container h3 {
+    margin: auto 0;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+.apps2-show-msj1 p, 
+.apps2-show-msj2 p {
+    margin: 0 auto;
+}
+
+.apps2-heady-container img, 
+.apps2-heady-container img {
+    width: 42px;
+    height: 42px;
+}
+
+.apps2-show-msj2 {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;
+    width: 272px;
+    height: 92px;
+    padding: 20px 28px;
+    transform: translateX(190px) translateY(140px);
+}
+
+.acc-tuto {
+    display: flex;
+    margin: 0 64px;
 }
 
 @media screen and (min-width: 320px){
