@@ -154,6 +154,50 @@ body{
     left: 50%;
 }
 
+.apps2-show {
+    display: flex;
+    border-radius: 10px 10px;
+    margin: 0 64px;
+    background: #4ebc42;
+}
+
+.apps2-show-wrapper1 {
+    width: 382px;
+    height: 151px;
+    padding: 69px 64px;    
+}
+
+.apps2-show-wrapper2 {
+    display: relative; 
+    background: url(https://assets.bitso.com/static/media/emoji1.d3cc48f3.png) center center / contain no-repeat;
+  
+}
+.apps2-show-msj1 h3 img {
+    width: 42px;
+    height: 42px;
+}
+
+.apps2-show-msj1 {
+    /* position: absolute; */
+    background: #ffffff;
+    border-radius: 10px;
+    width: 272px;
+    height: 92px;
+    padding: 20px 28px;
+}
+.apps2-show-msj2 h3 img {
+    width: 42px;
+    height: 42px;
+}
+
+.apps2-show-msj2 {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 272px;
+    height: 92px;
+    padding: 20px 28px;
+}
+
 @media screen and (min-width: 320px){
 
     .info-cards-div_content{
