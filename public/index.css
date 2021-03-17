@@ -158,6 +158,7 @@ body{
     display: flex;
     border-radius: 10px 10px;
     margin: 0 64px 80px 64px;
+    height: 330px;
     background: #4ebc42;
 }
 
@@ -180,7 +181,7 @@ body{
     width: 272px;
     height: 92px;
     padding: 20px 28px;
-    transform: translateX(130px) translateY(25px);
+    transform: translate(10%, 25%);
 }
 
 .apps2-heady-container {
@@ -212,13 +213,97 @@ body{
     width: 272px;
     height: 92px;
     padding: 20px 28px;
-    transform: translateX(190px) translateY(140px);
+    transform: translate(26%, 105%);
 }
 
+.apps2-heady {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+    color: rgb(255, 255, 255);
+}
+
+.apps2-show-wrapper1 h1 {
+    color: rgb(255, 255, 255);
+}
+
+.apps2-show-wrapper1 p {
+    color: rgb(255, 255, 255);
+}
 .acc-tuto {
     display: flex;
     margin: 0 64px;
+    margin-bottom: 50px;
 }
+
+.acc-tuto-heady {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 52px;
+    letter-spacing: -1.54px;
+    padding-right: 65px;
+}
+
+.acc-tuto-wrapper ul {
+    list-style: none;
+    color: #000000;
+}
+
+.acc-tuto-wrapper ul li {
+    margin-bottom: 50px;
+}
+
+.load-numer-container {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgb(246, 249, 252);
+}
+
+.load-numer-test {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    color: #4ebc42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-numer-adjuster {
+    display: flex;
+}
+
+.acc-tuto-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: auto 0;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.load-numer-wrapper p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.14px;
+    color: rgb(37, 44, 54);
+    padding-left: 50px;
+}
+
+.load-numer-wrapper p a {
+    text-decoration: none;
+    color: #4ebc42;
+}
+
+.load-numer-wrapper p a:hover {
+    text-decoration: underline;
+}
+
 
 @media screen and (min-width: 320px){
 
