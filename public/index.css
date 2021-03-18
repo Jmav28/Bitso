@@ -304,6 +304,107 @@ body{
     text-decoration: underline;
 }
 
+.currency-panel {
+    background-color: rgb(22, 26, 30);
+    color: #f6f9fc;
+    padding-top: 148px;
+}
+
+.currency-panel-container {
+    padding: 0 142px;
+    perspective: 500px;
+}
+
+.currency-panel-heady {
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: -1.54px;
+    margin-bottom: 98px;
+    text-shadow: rgb(22 26 30) 0px 0px 15px;
+}
+
+.currency-panel-coins {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 21px;
+    margin-bottom: 85px;
+}
+
+.currency-coin-container {
+    position: relative;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transform-style: preserve-3d;
+    height: 68px;
+    background-color: rgb(37, 44, 54);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.coin-description {
+    height: 32px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.09px;
+    line-height: 19px;
+}
+
+.coin-description p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+}
+
+.coin-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 7px 0 15px;
+    color: rgb(37, 44, 54);
+}
+
+#icon-btc {
+    background-color: #ffd340;
+}
+
+#icon-eth {
+    background-color: rgb(162, 91, 255);
+}
+
+#icon-tusd {
+    background-color: rgb(77, 119, 255);
+}
+
+#icon-xrp {
+    background-color: rgb(26, 151, 255);
+}
+
+#icon-dai {
+    background-color: rgb(255, 101, 38);
+}
+
+#icon-ltc {
+    background-color: rgb(44, 205, 197);
+}
+
+#icon-mana {
+    background-color: rgb(255, 145, 33);
+}
+
+#icon-bch {
+    background-color: rgb(177, 223, 54);
+}
+
+#icon-bat {
+    background-color: rgb(255, 113, 113);
+}
 
 @media screen and (min-width: 320px){
 
