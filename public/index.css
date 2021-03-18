@@ -333,9 +333,8 @@ body{
 
 .currency-coin-container {
     position: relative;
-    transition-duration: 0.4s;
+    transition-duration: 1s;
     transition-timing-function: linear;
-    transform-style: preserve-3d;
     height: 68px;
     background-color: rgb(37, 44, 54);
     border-radius: 10px;
@@ -404,6 +403,56 @@ body{
 
 #icon-bat {
     background-color: rgb(255, 113, 113);
+}
+
+#coin-container-btc:hover {
+    background-color: #ffd95a;
+    color: #000000;
+}
+
+#coin-container-eth:hover {
+    background-color: #b075ff;
+    color: #000000;
+}
+
+#coin-container-tusd:hover {
+    background-color: #678aff;
+    color: #000000;
+}
+
+#coin-container-xrp:hover {
+    background-color: #34a3ff;
+    color: #000000;
+}
+
+#coin-container-dai:hover {
+    background-color: #ff7740;
+    color: #000000;
+}
+
+#coin-container-ltc:hover {
+    background-color: #3dd5ce;
+    color: #000000;
+}
+
+#coin-container-mana:hover {
+    background-color: #ff9e3b;
+    color: #000000;
+}
+
+#coin-container-bch:hover {
+    background-color: #bae34c;
+    color: #000000;
+}
+
+#coin-container-bat:hover {
+    background-color: #ff8b8b;
+    color: #000000;
+}
+
+.currency-coin-container:hover {
+    transform: rotateX(-180deg);    
+    transform-style: preserve-3d;
 }
 
 @media screen and (min-width: 320px){
