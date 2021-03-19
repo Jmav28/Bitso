@@ -9,9 +9,6 @@ body{
     font-weight: 300;
 }
 
-.container {
-    padding: 0 64px;
-}
 
 .info-cards-div-wrapper {
     display: flex;
@@ -22,14 +19,6 @@ body{
 .info-cards-div_content p {
     font-size: 14px;
     color: #484d53;
-}
-
-.heady_3 {
-    font-family: 'roboto', sans-serif;
-    font-size: 36px;
-    letter-spacing: .2px;
-    margin: 80px 0;
-    line-height: 52px;
 }
 
 .info2-cards-div-wrapper {
@@ -85,13 +74,6 @@ body{
 
 .apps-show-div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.apps-show-content1, .apps-show-content2 {
-    margin: 64px 64px;
 }
 
 .header-apps-show {
@@ -155,32 +137,26 @@ body{
 }
 
 .apps2-show {
-    display: flex;
-    border-radius: 10px 10px;
-    margin: 0 64px 80px 64px;
+    display: grid;
     background: #4ebc42;
+    border-radius: 10px 10px;
+    height: 330px;
 }
 
 .apps2-show-wrapper1 {
-    width: 40%;
-    height: 151px;
-    padding: 69px 5%;    
+    height: 151px;  
 }
 
 .apps2-show-wrapper2 {
-    width: 50%; 
     background: url(https://assets.bitso.com/static/media/emoji1.d3cc48f3.png) center center / contain no-repeat;
+    position: relative;
 }
 
 .apps2-show-msj1 {
     position: absolute;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;
-    width: 272px;
-    height: 92px;
-    padding: 20px 28px;
-    transform: translateX(130px) translateY(25px);
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;   
 }
 
 .apps2-heady-container {
@@ -208,27 +184,263 @@ body{
     position: absolute;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;
-    width: 272px;
-    height: 92px;
-    padding: 20px 28px;
-    transform: translateX(190px) translateY(140px);
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;  
+}
+
+.apps2-heady {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+    color: rgb(255, 255, 255);
+}
+
+.apps2-show-wrapper1 h1 {
+    color: rgb(255, 255, 255);
+}
+
+.apps2-show-wrapper1 p {
+    color: rgb(255, 255, 255);
 }
 
 .acc-tuto {
     display: flex;
-    margin: 0 64px;
+    margin-bottom: 50px;
+}
+
+.acc-tuto-heady {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 52px;
+    letter-spacing: -1.54px;
+    padding-right: 65px;
+}
+
+.acc-tuto-wrapper ul {
+    list-style: none;
+    color: #000000;
+}
+
+.acc-tuto-wrapper ul li {
+    margin-bottom: 50px;
+}
+
+.load-numer-container {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgb(246, 249, 252);
+}
+
+.load-numer-test {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    color: #4ebc42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-numer-adjuster {
+    display: flex;
+}
+
+.acc-tuto-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: auto 0;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.load-numer-wrapper p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.14px;
+    color: rgb(37, 44, 54);
+    padding-left: 50px;
+}
+
+.load-numer-wrapper p a {
+    text-decoration: none;
+    color: #4ebc42;
+}
+
+.load-numer-wrapper p a:hover {
+    text-decoration: underline;
+}
+
+.currency-panel {
+    background-color: rgb(22, 26, 30);
+    color: #f6f9fc;
+    padding-top: 148px;
+}
+
+.currency-panel-heady {
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: -1.54px;
+    margin-bottom: 98px;
+    text-shadow: rgb(22 26 30) 0px 0px 15px;
+}
+
+.currency-panel-coins {
+    display: grid;
+    margin-bottom: 85px;
+}
+
+.currency-coin-container {
+    position: relative;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    height: 68px;
+    background-color: rgb(37, 44, 54);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.coin-description {
+    height: 32px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.09px;
+    line-height: 19px;
+}
+
+.coin-description p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+}
+
+.coin-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 7px 0 15px;
+    color: rgb(37, 44, 54);
+}
+
+#icon-btc {
+    background-color: #ffd340;
+}
+
+#icon-eth {
+    background-color: rgb(162, 91, 255);
+}
+
+#icon-tusd {
+    background-color: rgb(77, 119, 255);
+}
+
+#icon-xrp {
+    background-color: rgb(26, 151, 255);
+}
+
+#icon-dai {
+    background-color: rgb(255, 101, 38);
+}
+
+#icon-ltc {
+    background-color: rgb(44, 205, 197);
+}
+
+#icon-mana {
+    background-color: rgb(255, 145, 33);
+}
+
+#icon-bch {
+    background-color: rgb(177, 223, 54);
+}
+
+#icon-bat {
+    background-color: rgb(255, 113, 113);
+}
+
+#coin-container-btc:hover {
+    background-color: #ffd95a;
+    color: #000000;
+}
+
+#coin-container-eth:hover {
+    background-color: #b075ff;
+    color: #000000;
+}
+
+#coin-container-tusd:hover {
+    background-color: #678aff;
+    color: #000000;
+}
+
+#coin-container-xrp:hover {
+    background-color: #34a3ff;
+    color: #000000;
+}
+
+#coin-container-dai:hover {
+    background-color: #ff7740;
+    color: #000000;
+}
+
+#coin-container-ltc:hover {
+    background-color: #3dd5ce;
+    color: #000000;
+}
+
+#coin-container-mana:hover {
+    background-color: #ff9e3b;
+    color: #000000;
+}
+
+#coin-container-bch:hover {
+    background-color: #bae34c;
+    color: #000000;
+}
+
+#coin-container-bat:hover {
+    background-color: #ff8b8b;
+    color: #000000;
+}
+
+.currency-coin-container:hover {
+    transform: rotateX(-180deg);    
+    transform-style: preserve-3d;
 }
 
 @media screen and (min-width: 320px){
+    .container {
+        padding: 0 10%;
+    }
 
     .info-cards-div_content{
         width: 50%;
     }
 
+    .info-cards-div_content p {
+        padding: 0 3%;
+    }
+    
     .text-succes{
         color: #4ebc42;
         font-size: 21px;
+    }
+
+    .heady_3 {
+        margin: 40px 0;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 100;
     }
 
     .info2-cards-div-content {
@@ -236,17 +448,143 @@ body{
         font-size: 13px;
         line-height: 1.4;
         letter-spacing: 0.5px; 
-        padding: 0 2%;      
+        margin: 26px 0;
+        padding: 0 10%;              
+    }
+
+    .apps-show-div {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+    }
+
+    .apps-show-content1, .apps-show-content2 {
+        margin: 34px 34px;
+    }
+
+    .apps-show-wrapper1, .apps-show-wrapper2 {
+        margin-bottom: 10px;
+    }
+
+    .apps2-show {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr); 
+        margin-bottom: 40px;
+        height: 500px;
+    }
+
+    .apps2-show-wrapper1 {
+        padding: 29px 5% 0 5%; 
+        height: 200px; 
+    }
+
+    .apps2-show-wrapper2 {
+        background-color: #4ebc42;
+        width: auto;
+        height: 250px;
+    }
+
+    .apps2-show-msj1 {
+        width: 220px;
+        height: 82px;
+        transform: translate(5%, 5%);
+        padding: 15px 15px;
+        line-height: 1.15; 
+    }
+
+    .apps2-show-msj2 {
+        width: 220px;
+        height: 82px;
+        transform: translate(20%, 105%);
+        padding: 12px 15px;
+        line-height: 1.15; 
+    }
+
+    .acc-tuto {
+        margin: 0 24px;
+        flex-direction: column;
+    }
+
+    .currency-panel-coins {    
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 21px;
+    }
+
+    .currency-panel-container {
+        padding: 0 22px;
+        perspective: 500px;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 64px;
+    }
+    
     .info-cards-div_content {
         width: 24%;
         text-align: center;
     }
 
+    .heady_3 {
+        font-size: 36px;
+        line-height: 52px;
+        letter-spacing: .2px;
+        margin: 80px 0;
+    }
+
     .info2-cards-div-content {
         width: 29%;
+        padding: 0 2%;
+    }
+
+    .apps-show-div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .apps-show-content1, .apps-show-content2 {
+        margin: 64px 64px;
+    }
+
+    .apps2-show {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none; 
+        margin: 0 64px 80px 64px;
+    }
+
+    .apps2-show-wrapper1 {
+        padding: 69px 5%;  
+    }
+
+    .apps2-show-msj1 {
+        width: 272px;
+        height: 92px;
+        transform: translate(25%, 25%);
+        padding: 20px 28px; 
+    }
+
+    .apps2-show-msj2 {
+        width: 272px;
+        height: 92px;
+        transform: translate(60%, 105%);
+        padding: 20px 28px; 
+    }
+
+    .acc-tuto {
+        margin: 0 64px;
+    }
+
+    .currency-panel-coins {    
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 21px;
+    }
+
+    .currency-panel-container {
+        padding: 0 142px;
+        perspective: 500px;
     }
 }
