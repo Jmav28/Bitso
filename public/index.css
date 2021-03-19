@@ -281,11 +281,6 @@ body{
     padding-top: 148px;
 }
 
-.currency-panel-container {
-    padding: 0 142px;
-    perspective: 500px;
-}
-
 .currency-panel-heady {
     font-size: 36px;
     line-height: 52px;
@@ -296,9 +291,6 @@ body{
 
 .currency-panel-coins {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 21px;
     margin-bottom: 85px;
 }
 
@@ -509,6 +501,18 @@ body{
 
     .acc-tuto {
         margin: 0 24px;
+        flex-direction: column;
+    }
+
+    .currency-panel-coins {    
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 21px;
+    }
+
+    .currency-panel-container {
+        padding: 0 22px;
+        perspective: 500px;
     }
 }
 
@@ -571,5 +575,16 @@ body{
 
     .acc-tuto {
         margin: 0 64px;
+    }
+
+    .currency-panel-coins {    
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 21px;
+    }
+
+    .currency-panel-container {
+        padding: 0 142px;
+        perspective: 500px;
     }
 }
