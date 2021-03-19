@@ -9,9 +9,6 @@ body{
     font-weight: 300;
 }
 
-.container {
-    padding: 0 64px;
-}
 
 .info-cards-div-wrapper {
     display: flex;
@@ -22,14 +19,6 @@ body{
 .info-cards-div_content p {
     font-size: 14px;
     color: #484d53;
-}
-
-.heady_3 {
-    font-family: 'roboto', sans-serif;
-    font-size: 36px;
-    letter-spacing: .2px;
-    margin: 80px 0;
-    line-height: 52px;
 }
 
 .info2-cards-div-wrapper {
@@ -85,13 +74,6 @@ body{
 
 .apps-show-div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.apps-show-content1, .apps-show-content2 {
-    margin: 64px 64px;
 }
 
 .header-apps-show {
@@ -155,33 +137,26 @@ body{
 }
 
 .apps2-show {
-    display: flex;
-    border-radius: 10px 10px;
-    margin: 0 64px 80px 64px;
-    height: 330px;
+    display: grid;
     background: #4ebc42;
+    border-radius: 10px 10px;
+    height: 330px;
 }
 
 .apps2-show-wrapper1 {
-    width: 40%;
-    height: 151px;
-    padding: 69px 5%;    
+    height: 151px;  
 }
 
 .apps2-show-wrapper2 {
-    width: 50%; 
     background: url(https://assets.bitso.com/static/media/emoji1.d3cc48f3.png) center center / contain no-repeat;
+    position: relative;
 }
 
 .apps2-show-msj1 {
     position: absolute;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;
-    width: 272px;
-    height: 92px;
-    padding: 20px 28px;
-    transform: translate(10%, 25%);
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;   
 }
 
 .apps2-heady-container {
@@ -209,11 +184,7 @@ body{
     position: absolute;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;
-    width: 272px;
-    height: 92px;
-    padding: 20px 28px;
-    transform: translate(26%, 105%);
+    box-shadow: rgb(0 0 0 / 30%) 2px 2px 12px 0px;  
 }
 
 .apps2-heady {
@@ -230,9 +201,9 @@ body{
 .apps2-show-wrapper1 p {
     color: rgb(255, 255, 255);
 }
+
 .acc-tuto {
     display: flex;
-    margin: 0 64px;
     margin-bottom: 50px;
 }
 
@@ -456,14 +427,28 @@ body{
 }
 
 @media screen and (min-width: 320px){
+    .container {
+        padding: 0 10%;
+    }
 
     .info-cards-div_content{
         width: 50%;
     }
 
+    .info-cards-div_content p {
+        padding: 0 3%;
+    }
+    
     .text-succes{
         color: #4ebc42;
         font-size: 21px;
+    }
+
+    .heady_3 {
+        margin: 40px 0;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 100;
     }
 
     .info2-cards-div-content {
@@ -471,17 +456,120 @@ body{
         font-size: 13px;
         line-height: 1.4;
         letter-spacing: 0.5px; 
-        padding: 0 2%;      
+        margin: 26px 0;
+        padding: 0 10%;              
+    }
+
+    .apps-show-div {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+    }
+
+    .apps-show-content1, .apps-show-content2 {
+        margin: 34px 34px;
+    }
+
+    .apps-show-wrapper1, .apps-show-wrapper2 {
+        margin-bottom: 10px;
+    }
+
+    .apps2-show {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr); 
+        margin-bottom: 40px;
+        height: 500px;
+    }
+
+    .apps2-show-wrapper1 {
+        padding: 29px 5% 0 5%; 
+        height: 200px; 
+    }
+
+    .apps2-show-wrapper2 {
+        background-color: #4ebc42;
+        width: auto;
+        height: 250px;
+    }
+
+    .apps2-show-msj1 {
+        width: 220px;
+        height: 82px;
+        transform: translate(5%, 5%);
+        padding: 15px 15px;
+        line-height: 1.15; 
+    }
+
+    .apps2-show-msj2 {
+        width: 220px;
+        height: 82px;
+        transform: translate(20%, 105%);
+        padding: 12px 15px;
+        line-height: 1.15; 
+    }
+
+    .acc-tuto {
+        margin: 0 24px;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 64px;
+    }
+    
     .info-cards-div_content {
         width: 24%;
         text-align: center;
     }
 
+    .heady_3 {
+        font-size: 36px;
+        line-height: 52px;
+        letter-spacing: .2px;
+        margin: 80px 0;
+    }
+
     .info2-cards-div-content {
         width: 29%;
+        padding: 0 2%;
+    }
+
+    .apps-show-div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .apps-show-content1, .apps-show-content2 {
+        margin: 64px 64px;
+    }
+
+    .apps2-show {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none; 
+        margin: 0 64px 80px 64px;
+    }
+
+    .apps2-show-wrapper1 {
+        padding: 69px 5%;  
+    }
+
+    .apps2-show-msj1 {
+        width: 272px;
+        height: 92px;
+        transform: translate(25%, 25%);
+        padding: 20px 28px; 
+    }
+
+    .apps2-show-msj2 {
+        width: 272px;
+        height: 92px;
+        transform: translate(60%, 105%);
+        padding: 20px 28px; 
+    }
+
+    .acc-tuto {
+        margin: 0 64px;
     }
 }
