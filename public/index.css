@@ -208,16 +208,14 @@ body{
 }
 
 .acc-tuto-heady {
-    font-size: 36px;
     font-weight: 300;
-    line-height: 52px;
     letter-spacing: -1.54px;
-    padding-right: 65px;
 }
 
 .acc-tuto-wrapper ul {
     list-style: none;
     color: #000000;
+    padding: 0;
 }
 
 .acc-tuto-wrapper ul li {
@@ -278,14 +276,12 @@ body{
 .currency-panel {
     background-color: rgb(22, 26, 30);
     color: #f6f9fc;
-    padding-top: 148px;
 }
 
 .currency-panel-heady {
     font-size: 36px;
     line-height: 52px;
     letter-spacing: -1.54px;
-    margin-bottom: 98px;
     text-shadow: rgb(22 26 30) 0px 0px 15px;
 }
 
@@ -328,7 +324,6 @@ body{
     justify-content: center;
     font-size: 20px;
     font-weight: 100;
-    margin: 0 7px 0 15px;
     color: rgb(37, 44, 54);
 }
 
@@ -420,7 +415,7 @@ body{
 
 @media screen and (min-width: 320px){
     .container {
-        padding: 0 10%;
+        margin: 0 10%;
     }
 
     .info-cards-div_content{
@@ -458,44 +453,60 @@ body{
     }
 
     .apps-show-content1, .apps-show-content2 {
-        margin: 34px 34px;
+        margin: 14px 34px;
     }
 
     .apps-show-wrapper1, .apps-show-wrapper2 {
         margin-bottom: 10px;
+        height: 490px;
     }
 
     .apps2-show {
         grid-template-columns: none;
         grid-template-rows: repeat(2, 1fr); 
         margin-bottom: 40px;
-        height: 500px;
+        height: 450px;
+        margin: 0 10%;
     }
 
     .apps2-show-wrapper1 {
-        padding: 29px 5% 0 5%; 
-        height: 200px; 
+        padding: 30px 5% 0 5%; 
+        height: 185px; 
     }
 
     .apps2-show-wrapper2 {
-        background-color: #4ebc42;
         width: auto;
-        height: 250px;
+        height: 235px;
     }
 
     .apps2-show-msj1 {
-        width: 220px;
-        height: 82px;
-        transform: translate(5%, 5%);
-        padding: 15px 15px;
+        width: 175px;
+        height: 60px;
+        transform: translate(5%, 25%);
+        padding: 15px;
+        font-size: 10px;
         line-height: 1.15; 
     }
 
+    .apps2-show-msj1 p, .apps2-show-msj2 p {
+        margin-top: 5px;
+    }
+
+    .apps2-heady-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .apps2-heady-container h3 {
+        font-size: 12px;
+    }
+
     .apps2-show-msj2 {
-        width: 220px;
-        height: 82px;
-        transform: translate(20%, 105%);
-        padding: 12px 15px;
+        width: 175px;
+        height: 60px;
+        transform: translate(20%, 112%);
+        padding: 15px;
+        font-size: 10px;
         line-height: 1.15; 
     }
 
@@ -504,21 +515,54 @@ body{
         flex-direction: column;
     }
 
+    .acc-tuto-heady {
+        font-size: 22px;
+        line-height: 1.55;
+        padding: 0;
+    }
+
+    .currency-panel {
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    .currency-panel-heady {
+        margin-bottom: 50px;
+    }
+
     .currency-panel-coins {    
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        gap: 21px;
+        grid-auto-flow: initial;
+        grid-auto-rows: initial;
+        grid-auto-columns: initial;
+        gap: 9px;
     }
 
     .currency-panel-container {
         padding: 0 22px;
-        perspective: 500px;
+    }
+
+    .coin-icon {
+        margin: 0 5px 0 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .apps2-show-msj1 {
+        transform: translate(65%, 25%);
+    }
+    
+    .apps2-show-msj2 {
+        transform: translate(100%, 105%);
     }
 }
 
 @media screen and (min-width: 1024px) {
     .container {
+        margin: 0 auto;
         padding: 0 64px;
+        max-width: 1440px;
     }
     
     .info-cards-div_content {
@@ -544,6 +588,10 @@ body{
         gap: 10px;
         margin-bottom: 10px;
     }
+
+    .apps-show-wrapper1, .apps-show-wrapper2 {
+        height: auto;
+    }
     
     .apps-show-content1, .apps-show-content2 {
         margin: 64px 64px;
@@ -552,29 +600,55 @@ body{
     .apps2-show {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: none; 
-        margin: 0 64px 80px 64px;
+        margin-bottom: 80px;
+        padding: 0 64px;
+        height: 317px;
     }
 
     .apps2-show-wrapper1 {
-        padding: 69px 5%;  
+        padding: 69px 5%; 
+        height: auto; 
+    }
+
+    .apps2-show-wrapper2 {
+        height: auto;
     }
 
     .apps2-show-msj1 {
         width: 272px;
         height: 92px;
-        transform: translate(25%, 25%);
+        transform: translate(15%, 25%);
+        font-size: 16px;
+        line-height: 1.5;
         padding: 20px 28px; 
     }
 
     .apps2-show-msj2 {
         width: 272px;
         height: 92px;
-        transform: translate(60%, 105%);
+        transform: translate(30%, 105%);
+        font-size: 16px;
+        line-height: 1.5;
         padding: 20px 28px; 
     }
 
     .acc-tuto {
-        margin: 0 64px;
+        padding: 0 128px;
+        flex-direction: row;
+    }
+
+    .acc-tuto-heady {
+        font-size: 36px;        
+        line-height: 52px;
+        padding-right: 65px;
+    }
+
+    .currency-panel {
+        padding-top: 158px;
+    }
+
+    .currency-panel-heady {
+        margin-bottom: 100px;
     }
 
     .currency-panel-coins {    
@@ -584,7 +658,22 @@ body{
     }
 
     .currency-panel-container {
-        padding: 0 142px;
-        perspective: 500px;
+        padding: 0 70px;
+    }
+
+    .coin-icon {
+        margin: 0 7px 0 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .apps2-show-msj1 {
+        transform: translate(25%, 25%);
+    }
+    
+    .apps2-show-msj2 {
+        transform: translate(60%, 105%);
     }
 }
