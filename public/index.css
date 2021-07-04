@@ -12,7 +12,7 @@ body{
 .nav-bar-div {
     display: flex;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     width: 100%;
     height: 60px;
     background-color: rgb(255, 255, 255)
@@ -22,6 +22,7 @@ body{
     display: flex;
     width: 90%;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .nav-bar-logo {
@@ -35,7 +36,16 @@ body{
 .nav-bar-menu {
     position: relative;
     margin: auto 0;
-    left: 45%;
+}
+
+.btn-menu-barras {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.info-cards-div-wrapper {
+    padding-top: 50px;
 }
 
 .nav-bar-menu span {
@@ -483,6 +493,10 @@ body{
         margin: 0 10%;
     }
 
+    .nav-bar-menu {
+        display: none;
+    }
+
     .info-cards-div_content{
         width: 50%;
     }
@@ -629,6 +643,14 @@ body{
         padding: 0 64px;
         max-width: 1440px;
     }
+
+    .nav-bar-menu {
+        display: block;
+    }
+
+    .btn-menu-barras {
+        display: none;
+    }
     
     .info-cards-div_content {
         width: 24%;
@@ -739,5 +761,9 @@ body{
     
     .apps2-show-msj2 {
         transform: translate(60%, 105%);
+    }
+
+    .nav-bar-container .btn-menu-barras {
+        display: none;
     }
 }
